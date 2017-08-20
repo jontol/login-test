@@ -1,0 +1,20 @@
+extends layout
+block content
+    .login.well
+      h1  Log in...
+      hr
+      form(id='login-form', method='POST', action='/login' novalidate)
+        .form-group
+          label(for='email') Email
+          input(type='text', name='email', class='form-control',
+            id='email', placeholder='Enter email',
+            required, data-required-msg='Email is required')
+        .form-group
+          label(for='password') Password
+          input(type='password', name='password', class='form-control',
+            id='password', placeholder='Enter password',
+            required, data-required-msg='Password is required')
+        .form-group
+          button.btn.btn-default Login
+          a(href="register") Or Register
+        include message

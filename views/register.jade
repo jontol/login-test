@@ -1,0 +1,36 @@
+extends layout
+block content
+  .login.well
+    h1  Please Register
+    hr
+    form(id='register-form', method='POST', action='/register' novalidate)
+      .form-group
+        label(for='firstname') First Name
+        input(type='text', name='firstname', class='form-control',
+          id='firstname', placeholder='Enter first name',
+          required, data-required-msg='First Name is required')
+      .form-group
+        label(for='lastname') Last Name
+        input(type='text', name='lastname', class='form-control',
+          id='lastname', placeholder='Enter Last name',
+          required, data-required-msg='Last name is required')
+      .form-group
+        label(for='password') Password
+        input(type='password', name='password', class='form-control',
+          id='password', placeholder='Enter password'
+          required, data-required-msg='Password is required')
+      .form-group
+        label(for='confirm-password') Confirm Password
+        input(type='password', name='confirm-password', class='form-control',
+          id='confirm-password', placeholder='Confirm password'
+          required, data-required-msg="Please confirm your password")
+      .form-group
+        label(for='email') Email
+        input(type='email', name='email', class='form-control',
+          id='email', placeholder='Enter email',
+          required data-required-msg='Email address is required')
+      .form-group
+        button.btn.btn-default Register
+        a(href="login") Or Login
+      include message
+
