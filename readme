@@ -2,6 +2,11 @@
 npm install -g express-generator
 express --git e24
 
+# To ease development process
+npm install -g nodemon
+
+# Install brew
+# Instal heroku for testing
 
 # Source of inspiration
 # http://www.telerik.com/blogs/form-validation-with-expressjs
