@@ -2,30 +2,6 @@
 npm install -g express-generator
 express --git e24
 
-# FRONTEND - PUT INSIDE e24 FOLDER
-npm install -g create-react-app
-create-react-app client
 
-
-
-
-Success! Created client at /Users/jontollefsen/playground/e24/client
-Inside that directory, you can run several commands:
-
-  npm start
-    Starts the development server.
-
-  npm run build
-    Bundles the app into static files for production.
-
-  npm test
-    Starts the test runner.
-
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd client
-  npm start
+# Source of inspiration
+# http://www.telerik.com/blogs/form-validation-with-expressjs
